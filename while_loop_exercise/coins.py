@@ -1,0 +1,29 @@
+change = float(input())
+change_amount_in_pennies = int(change * 100)
+coins_count = 0
+while change_amount_in_pennies > 0:
+    if change_amount_in_pennies >= 200:
+        change_amount_in_pennies -= 200
+        coins_count += 1
+    elif change_amount_in_pennies >= 100:
+        change_amount_in_pennies -= 100
+        coins_count += 1
+    elif change_amount_in_pennies >= 50:
+        change_amount_in_pennies -= 50
+        coins_count += 1
+    elif change_amount_in_pennies >= 20:
+        change_amount_in_pennies -= 20
+        coins_count += 1
+    elif change_amount_in_pennies >= 10:
+        change_amount_in_pennies -= 10
+        coins_count += 1
+    elif change_amount_in_pennies >= 5:
+        change_amount_in_pennies -= 5
+        coins_count += 1
+    elif change_amount_in_pennies >= 2:
+        change_amount_in_pennies -= 2
+        coins_count += 1
+    elif change_amount_in_pennies >= 1:
+        change_amount_in_pennies -= 1
+        coins_count += 1
+print(coins_count)
